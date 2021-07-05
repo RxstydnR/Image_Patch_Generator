@@ -19,7 +19,7 @@ python image_patch_generator.py --dataset img --save patch --patch_size 32
 
 
 
-## How to use
+## Usage
 
 <center><img src="demo/demo.png" width=700></center>
 
