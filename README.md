@@ -1,3 +1,5 @@
+# Patch Image Generator using OpenCV
+
 ## Running
 
 ```bash
@@ -7,7 +9,7 @@ python image_patch_generator.py \\
         --patch_size [Size of patch image size] 
 ```
 
-The generated patch images are limited to square images. By change the program, you can create flexible patch images.
+The generated patch images are limited to square images. By changing the code, you can create flexible patch images.
 
 ### Example
 
