@@ -1,23 +1,13 @@
-# Patch Image Generator using OpenCV
+# Patch Image Maker using OpenCV
 
 ## Running
 
-```bash
-python image_patch_generator.py \\
-        --dataset [Path to folder storing images] \\
-        --save [Path to saving folder] \\
-        --patch_size [Size of patch image size] 
+```shell
+ python patch_maker.py \
+        --dataset [dataset folder] --save_dir [saving folder] \
+        --patch_width 31 --patch_height 31 --scale 2
 ```
-
-The generated patch images are limited to square images. By changing the code, you can create flexible patch images.
-
-### Example
-
-```bash
-python image_patch_generator.py --dataset img --save patch --patch_size 32
-```
-
-
+`scale` option controls the view window size. For example, --scale 2 doubles the size of the diplayed window.
 
 ## Usage
 
@@ -37,7 +27,7 @@ python image_patch_generator.py --dataset img --save patch --patch_size 32
 
 The image on the left is a screen for specifying the patch image area. 
 When you click on the image, the patch image centered on the clicked point is cut out. 
-The cropped patch image is displayed in the upper left corner and is saved in the saving folder. 
+Then, the cropped patch image will be saved in the saving folder. 
 To move to the next image, press the "k" button. 
 As long as you do not move to the next image, you can continue to cut the patch image from the same image. 
 To exit the program, press "q".
